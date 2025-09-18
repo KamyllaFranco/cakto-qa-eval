@@ -1,0 +1,74 @@
+[
+  {
+    "nome_teste": "Health Check",
+    "timestamp": "2025-09-18T08:52:02.569862",
+    "esperado": "200 OK",
+    "atual": "200 OK",
+    "status": "PASS",
+    "descricao_bug": null
+  },
+  {
+    "nome_teste": "GET Usuários - Estrutura",
+    "timestamp": "2025-09-18T08:52:02.639653",
+    "esperado": "Lista de usuários",
+    "atual": "Lista retornada",
+    "status": "PASS",
+    "descricao_bug": null
+  },
+  {
+    "nome_teste": "GET Usuários - Campos",
+    "timestamp": "2025-09-18T08:52:02.639991",
+    "esperado": "Todos os campos",
+    "atual": "Todos presentes",
+    "status": "PASS",
+    "descricao_bug": null
+  },
+  {
+    "nome_teste": "Emails Duplicados",
+    "timestamp": "2025-09-18T08:52:02.698884",
+    "esperado": "Emails únicos",
+    "atual": "Duplicados: {'maria@email.com'}",
+    "status": "BUG",
+    "descricao_bug": "Não deve haver emails duplicados"
+  },
+  {
+    "nome_teste": "Tipos de Idade",
+    "timestamp": "2025-09-18T08:52:02.767287",
+    "esperado": "Todos números",
+    "atual": "Inválidos: ['ID 7: thirty (str)']",
+    "status": "BUG",
+    "descricao_bug": "Campo age deve ser sempre número"
+  },
+  {
+    "nome_teste": "Paginação - Página Negativa",
+    "timestamp": "2025-09-18T08:52:02.833011",
+    "esperado": "400 Bad Request",
+    "atual": "200",
+    "status": "BUG",
+    "descricao_bug": "Página negativa deveria retornar 400"
+  },
+  {
+    "nome_teste": "Paginação - Limite Excessivo",
+    "timestamp": "2025-09-18T08:52:02.903902",
+    "esperado": "400 Bad Request",
+    "atual": "200",
+    "status": "BUG",
+    "descricao_bug": "Limite excessivo deveria retornar 400"
+  },
+  {
+    "nome_teste": "ID Inexistente",
+    "timestamp": "2025-09-18T08:52:02.968026",
+    "esperado": "404 Not Found",
+    "atual": "500",
+    "status": "BUG",
+    "descricao_bug": "ID inexistente deveria retornar 404"
+  },
+  {
+    "nome_teste": "Memory Leak Endpoint",
+    "timestamp": "2025-09-18T08:52:03.252678",
+    "esperado": "200 OK",
+    "atual": "200 OK",
+    "status": "PASS",
+    "descricao_bug": null
+  }
+]

@@ -1,6 +1,5 @@
 # fly.toml app configuration file generated for cakto-qa-eval on 2025-09-15T13:03:17-03:00
 #
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'cakto-qa-eval'
